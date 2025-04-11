@@ -1,0 +1,10 @@
+body {
+    margin: 0px;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+}

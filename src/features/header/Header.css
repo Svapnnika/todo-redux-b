@@ -1,0 +1,16 @@
+.App-Header-Row {
+    background-color: rgb(79, 79, 184);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.App-Header-Row .menu{
+    display: inline-block;
+    margin: 5px;
+}
+
+.App-Header-Menu-Text{
+    color:white
+}
