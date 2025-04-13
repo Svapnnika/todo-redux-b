@@ -28,8 +28,8 @@ const Todo = () => {
 
   return (
     <div>
-      <input type="text" value={text} onChange={handleInputChange} />
-      <button onClick={handleAddTodo}> Add Todo </button>
+      <input type="text" value={text} onChange={handleInputChange} style={{ padding: "6px", margin:"3" }}/>
+      <button onClick={handleAddTodo} style={{ padding: "6px", margin:"3", marginTop: '30px'}}> Add Todo </button>
       <ul>
         {" "}
         {todos.map((todo) => (
@@ -40,11 +40,11 @@ const Todo = () => {
             }}
           >
             {todo.text}{" "}
-            <button onClick={() => handleToggleComplete(todo.id)}>
+            <button onClick={() => handleToggleComplete(todo.id)} style={{padding:'5px',margin:'2'}}>
               {" "}
               {todo.completed ? "Mark Incomplete" : "Mark Complete"}{" "}
             </button>{" "}
-            <button onClick={() => handleDeleteTodo(todo.id)}> Delete </button>{" "}
+            <button onClick={() => handleDeleteTodo(todo.id)} style={{padding:'5px',margin:'2'}}> Delete </button>{" "}
           </li>
         ))}{" "}
       </ul>{" "}
